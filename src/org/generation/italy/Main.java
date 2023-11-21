@@ -21,6 +21,9 @@ public class Main {
 		elencoStudenti.add("Simone");
 		elencoStudenti.add("Alice");
 		
+		//elencoStudenti.remove(2);
+		elencoStudenti.remove("Simone");
+		
 		System.out.println("Prima dell'ordinamento:");
 		System.out.println(elencoStudenti);
 		
@@ -52,6 +55,25 @@ public class Main {
 		for (int i=numeri.length-1;i>=0;i--)
 			System.out.print(numeri[i]+"  ");
 		
+		
+		
+		//NEL CASO DI ARRAY (Classe Integer):
+		System.out.println("\n\n\n**** ORDINAMENTO ARRAY (Classe Integer) ****");
+		Integer[] numeriCl= {8,2,9,-2,0,23,12};
+		System.out.println("Prima dell'ordinamento:");
+		for (int n:numeriCl)
+			System.out.print(n+"  ");
+		
+		Arrays.sort(numeriCl);
+		System.out.println("\n\nDopo l'ordinamento:");
+		for (int n:numeriCl)
+			System.out.print(n+"  ");
+		
+		
+		Arrays.sort(numeriCl,Collections.reverseOrder());
+		System.out.println("\n\nReversed:");
+		for (int n:numeriCl)
+			System.out.print(n+"  ");
 		
 	}
 
